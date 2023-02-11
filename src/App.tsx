@@ -10,13 +10,13 @@ import Country from './components/Country';
 
 function App() {
   const { data, error, isLoading } = useSWR('items', getListItem)
-  const [query, setQuery] = useState<string>("")
+  const [query, setQuery] = useState<Array<object>>([])
 
   // const [searchTerm, setSearchTerm] = useState<string>("")
   // const [findGender, setFindGender] = useState<string>("")
   // const [findCountry, setFindCountry] = useState<string>("")
 
-  const [filter, setFilter] = useState<any>({
+  const [filter, setFilter] = useState<object>({
     searchTerm: "" || JSON.parse(localStorage.getItem("filter") || "{}")?.searchTerm,
     findGender: "" || JSON.parse(localStorage.getItem("filter") || "{}")?.findGender,
     findCountry: "" || JSON.parse(localStorage.getItem("filter") || "{}")?.findCountry

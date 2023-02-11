@@ -6,7 +6,7 @@ import Item from './Item';
 import { useEffect } from 'react';
 
 type Props = {
-    query: any,
+    query: Array<object>,
 }
 
 const List = ({ query }: Props) => {
