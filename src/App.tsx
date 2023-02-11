@@ -65,9 +65,11 @@ function App() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="container flex flex-col items-center justify-center">
-        <h1 className='font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>test</h1>
-        <div className="flex flex-col items-center justify-center space-y-4">
+      <div className="container">
+        <div className='flex items-center justify-center'>
+          <h1 className='font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>test</h1>
+        </div>
+        <div className="flex flex-col">
           {error && <div className="text-2xl font-bold">Error</div>}
           {!isLoading ?
             (

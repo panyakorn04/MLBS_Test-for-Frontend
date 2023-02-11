@@ -8,9 +8,9 @@ type Props = {
 
 const SearchInput = ({ filter, setFilter, handleClear }: Props) => {
     return (
-        <div className=' flex space-x-4'>
+        <div className='flex space-x-4 mt-4 items-center justify-center'>
             <label htmlFor="search" className="sr-only">Search</label>
-            <div className="relative mt-1 flex items-center rounded-md border border-gray-300">
+            <div className="relative mt-1  rounded-md border border-gray-300">
                 <input type="text"
                     name="search"
                     id="search"
@@ -26,7 +26,7 @@ const SearchInput = ({ filter, setFilter, handleClear }: Props) => {
                     </kbd>
                 </div>
             </div>
-            <button type="button" className='inline-flex items-center mt-1 rounded border border-transparent bg-indigo-100 px-2.5 py-1.5 text-xs font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' onClick={() => handleClear()} >clear</button>
+            <button type="button" className='inline-flex items-center rounded border border-transparent bg-indigo-100 px-2.5 py-1.5 text-xs font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' onClick={() => handleClear()} >clear</button>
         </div>
     )
 }

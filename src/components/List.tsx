@@ -30,9 +30,9 @@ const List = ({ query }: Props) => {
     }, [query])
 
     return (
-        <>
+        <div className='container'>
             {items && items.length > 0 ? (
-                <InfiniteScroll className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4"
+                <InfiniteScroll className="mt-10 grid grid-cols-1 px-4 gap-x-4 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4"
                     dataLength={items.length}
                     next={fetchMoreData}
                     hasMore={hasMore}
@@ -47,7 +47,7 @@ const List = ({ query }: Props) => {
             ) : (
                 <div className="text-2xl font-bold">No Data</div>
             )}
-        </>
+        </div>
     )
 }
 
