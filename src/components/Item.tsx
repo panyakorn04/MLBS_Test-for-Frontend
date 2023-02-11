@@ -8,7 +8,7 @@ type Props = {
 const Item = ({ result }: Props) => {
     const item = result
     return (
-        <div className="group relative cursor-pointer shadow-lg rounded-md" >
+        <div className="group relative cursor-pointer shadow-lg rounded-md mb-4" >
             <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-t-md bg-gray-200 group-hover:opacity-75">
                 <img src={item?.image} alt={item?.image} loading='lazy' className="w-full h-40 object-cover object-center" />
             </div>
